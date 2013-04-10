@@ -19,7 +19,7 @@ First a stopwatch helper macro for the examples below
          (- (. System (nanoTime)) start#)))
 
 
-Example: **Calculate the simple mean of a bunch of stopwatch measurements**
+Example: **Calculate the simple mean of a bunch of stopwatch measurements of (Thread/sleep 0)**
 
     (let [stats (atom nil)] ; 'stats' will store the statistical data
       (dotimes [x 5]
@@ -34,7 +34,7 @@ Example: **Calculate the simple mean of a bunch of stopwatch measurements**
         ;;
         (println "mean:" (:mean @stats) " raw results:" @stats)))
 
-Example: **Calculate the exponentially weighted mean**
+Example: **Calculate the exponentially weighted mean, using a weight factor of 0.8**
 
     (let [stats (atom nil) ; 'stats' will store the statistical data
           alpha 0.8        ; the weight factor
@@ -51,7 +51,7 @@ Example: **Calculate the exponentially weighted mean**
         ;;
         (println "mean:" (:mean @stats) " raw results:" @stats)))
 
-Example: **Calculate the weighted mean, variance and standard deviation**
+Example: **Calculate the weighted mean, variance and standard deviation, using some random weights**
 
     (let [stats (atom nil) ; 'stats' will store the statistical data
           some-random-weights [0.1 2.0 2.0 3.0]]
