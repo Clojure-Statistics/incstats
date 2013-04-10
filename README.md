@@ -10,7 +10,15 @@ incstats can be used to calculate:
 
 # Usage
 
-First a stopwatch helper macro for the examples below
+**leiningen**
+
+    [incstats "0.1.2"]
+
+**use**
+
+    (use 'incstats.core)
+
+Let's first define a stopwatch macro for the examples below
 
     (defmacro stopwatch-nanos
       [body]

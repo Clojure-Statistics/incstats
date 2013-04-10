@@ -1,4 +1,4 @@
-(defproject incstats "0.1.2-SNAPSHOT"
+(defproject incstats "0.1.3-SNAPSHOT"
   :description "A clojure library that calculates simple statistics incrementally"
   :url "http://github.com/EugenDueck/incstats"
   :license {:name "Eclipse Public License"
