@@ -18,6 +18,8 @@ incstats can be used to calculate:
 
     (use 'incstats.core)
 
+**examples**
+
 Let's first define a stopwatch macro for the examples below
 
     (defmacro stopwatch-nanos
